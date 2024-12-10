@@ -18,3 +18,14 @@ userNameSpan.textContent = userName;
 closeBanner.addEventListener('click', () => {
     welcomeBanner.style.display = 'none';
 });
+
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY + window.innerHeight * 0.8; // Ativar animação antes do elemento estar visível
+    sections.forEach(section => {
+        if (scrollY > section.offsetTop) {
+            section.classList.add('visible');
+        }
+    });
+});
