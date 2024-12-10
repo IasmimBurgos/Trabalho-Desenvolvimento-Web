@@ -17,10 +17,10 @@ Este projeto foi realizado em equipe para a segunda avaliação da disciplina de
 
 ## Descrição 📝
 
-Este projeto consiste em um site interativo que permite aos usuários conhecerem os maiores times de futebol do Nordeste do Brasil. A plataforma oferece uma visão detalhada sobre cada time, incluindo informações sobre a quantidade de títulos conquistados, os anos em que foram conquistados, e o calendário anual de campeonatos em que participam.
+Este projeto consiste em um site interativo que permite aos usuários conhecerem os maiores times de futebol de Pernambuco. A plataforma oferece uma visão detalhada sobre cada time, incluindo informações sobre a quantidade de títulos conquistados, os anos em que foram conquistados, e o calendário anual de campeonatos em que participam.
 
 ### Funcionalidades ⚙️
-- **Conheça os maiores times do Nordeste**: Explore as informações detalhadas sobre os times mais importantes da região.
+- **Conheça os maiores times de Pernambuco**: Explore as informações detalhadas sobre os times mais importantes da região.
 - **Títulos**: Visualize a quantidade de títulos conquistados por cada time e os anos em que foram alcançados.
 - **Calendário anual**: Confira o calendário anual de campeonatos e as competições em que os times estão envolvidos.
 
