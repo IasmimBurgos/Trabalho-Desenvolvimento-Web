@@ -94,10 +94,34 @@ header p {
     margin-top: 10px;
 }
 
+.nav {
+    background-color: #004F78;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    transition: top 0.7s ease;
+  }
+  
+  .nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #004F78;
+    width: 100%;
 }
 
 nav ul {
@@ -109,6 +133,8 @@ nav ul {
 
 nav ul li {
     position: relative;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -117,6 +143,7 @@ nav ul li a {
     padding: 10px 15px;
     border-radius: 4px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 nav ul li a:hover,
@@ -164,6 +191,7 @@ nav ul li a.active {
 }
 
 main {
+    padding-top: 60px;
     padding: 20px;
 }
 
@@ -268,8 +296,23 @@ footer {
 
     .menu-toggle {
         display: block;
-        align-self: flex-end;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1001; 
+        background-color: #004F78;
+        color: white;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
+
+    .nav {
+        position: absolute;
+        top: 0;
+      }
 
     nav {
         display: none;
@@ -279,9 +322,10 @@ footer {
         animation: slideDown 0.4s ease forwards;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+        background-color: #004F78;
     }
 
     @keyframes slideDown {
@@ -297,17 +341,32 @@ footer {
 
     nav ul {
         flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
         gap: 10px;
     }
 
     nav ul li {
-        border-bottom: 1px solid #575757;
+        border-bottom: 1px solid #ffffff;
+        margin: 10px 0;
     }
 
     #icones {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 1.5em;
     }
+
+    #icones a {
+        width: 120px;
+        font-size: 0.9em; 
+      }
+
+    #icones img {
+        width: 80px;
+        height: 80px;
+      }
 
     main img {
         width: 300px;
@@ -326,3 +385,54 @@ footer {
         font-size: 0.9rem;
     }
 }
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    background: linear-gradient(90deg, #4caf50, #1e90ff); /* Gradiente de fundo */
+    -webkit-background-clip: text; /* Recorte o gradiente no texto */
+    -webkit-text-fill-color: transparent; /* Torna o fundo visível no texto */
+    padding: 10px 0; /* Espaçamento interno */
+    margin-top: 70px;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .calendar-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .calendar-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calendar-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 300;
+  }
