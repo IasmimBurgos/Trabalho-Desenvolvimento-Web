@@ -22,7 +22,7 @@ closeBanner.addEventListener('click', () => {
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY + window.innerHeight * 0.8; // Ativar animação antes do elemento estar visível
+    const scrollY = window.scrollY + window.innerHeight * 0.8; 
     sections.forEach(section => {
         if (scrollY > section.offsetTop) {
             section.classList.add('visible');
