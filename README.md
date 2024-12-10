@@ -21,7 +21,7 @@ Este projeto consiste em um site interativo que permite aos usuários conhecerem
 
 ### Funcionalidades ⚙️
 - **Conheça os maiores times do Nordeste**: Explore as informações detalhadas sobre os times mais importantes da região.
-- **Títulos**:Visualize a quantidade de títulos conquistados por cada time e os anos em que foram alcançados.
+- **Títulos**: Visualize a quantidade de títulos conquistados por cada time e os anos em que foram alcançados.
 - **Calendário anual**: Confira o calendário anual de campeonatos e as competições em que os times estão envolvidos.
 
 ## Tecnologias Utilizadas 🛠️
